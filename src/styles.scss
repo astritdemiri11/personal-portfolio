@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@import "app/material/theme/maintain";
+@import "app/material/theme/colors";
+
+@mixin app-colors($theme) {
+    @include universal-colors($theme);
+}
+
+@import "app/material/theme/type/light";
+@import "app/material/theme/type/dark";
+
+@include angular-material-theme($light-theme);
+@include app-colors($light-theme);
+
+.dark-theme {
+    @include angular-material-theme($dark-theme);
+    @include app-colors($dark-theme);
+    
+
+    transition: all 300ms;
+}
+
+/*Space*/
+.padding-0 {
+    padding: 0;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+/*Dimension*/
+.height-100p {
+    height: 100%;
+}
+
+.max-height-100p {
+    max-height: 100%;
+}
+
+.dimension-24px-i {
+    width: 24px !important;
+    height: 24px !important;
+    line-height: 24px !important;
+}
+
+/*Scroll*/
+.scroll {
+    scroll-behavior: smooth;
+  }
+  
+.scroll.x-scroll {
+    overflow-x: auto;
+}
+
+.scroll.y-scroll {
+    overflow-y: auto;
+}
