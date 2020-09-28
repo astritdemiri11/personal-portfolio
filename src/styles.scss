@@ -5,17 +5,15 @@
     @include universal-colors($theme);
 }
 
-@import "app/material/theme/type/light";
-@import "app/material/theme/type/dark";
+@import "app/material/theme/type/blueGray-amber";
+@include angular-material-theme($blueGrayAmber-theme);
+@include app-colors($blueGrayAmber-theme);
 
-@include angular-material-theme($light-theme);
-@include app-colors($light-theme);
-
-.dark-theme {
-    @include angular-material-theme($dark-theme);
-    @include app-colors($dark-theme);
+@import "app/material/theme/type/blueGray-lime";
+.blueGrayLime-theme {
+    @include angular-material-theme($blueGrayLime-theme);
+    @include app-colors($blueGrayLime-theme);
     
-
     transition: all 300ms;
 }
 
@@ -24,8 +22,12 @@
     padding: 0;
 }
 
-.margin-0 {
-    margin: 0;
+.margin-0-i {
+    margin: 0 !important;
+}
+
+.margin-right-8px {
+    margin-right: 8px;
 }
 
 /*Dimension*/
@@ -41,6 +43,48 @@
     width: 24px !important;
     height: 24px !important;
     line-height: 24px !important;
+}
+
+/*Position*/
+.absolute-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.fixed-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.zIndex-1 {
+    z-index: 1;
+}
+
+.zIndex-2 {
+    z-index: 2;
+}
+
+/*Text*/
+.font-bold {
+    font-weight: bold;
+}
+
+.font-bold-i {
+    font-weight: bold !important;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-700-i {
+    font-weight: 700 !important;
 }
 
 /*Scroll*/

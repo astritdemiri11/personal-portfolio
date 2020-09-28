@@ -1,17 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+
 import { MaterialModule } from '../material/material.module';
+import { ElevatorComponent } from './components/graphics/elevator/elevator.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ElevatorComponent],
   imports: [
     CommonModule,
     MaterialModule
   ],
   exports: [
-    MaterialModule
+    ElevatorComponent
   ]
 })
 export class SharedModule { }

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MaterialModule } from 'src/app/material/material.module';
 
+import { IntroComponent } from './index/components/intro/intro.component';
 import { IndexComponent } from './index/index.component';
+import { AboutComponent } from './index/components/about/about.component';
 
 
 const routes: Routes = [
@@ -9,9 +12,18 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-  declarations: [IndexComponent]
+  imports: [
+    RouterModule.forChild(routes),
+    MaterialModule
+  ],
+  exports: [
+    RouterModule
+  ],
+  declarations: [
+    IndexComponent,
+    IntroComponent,
+    AboutComponent
+  ]
 })
 
 export class RoutesModule { }

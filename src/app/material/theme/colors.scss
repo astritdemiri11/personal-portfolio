@@ -14,9 +14,11 @@
   .primary-background-color {
     background-color: mat-color($primary);
   }
+
   .primary-darker-background-color {
     background-color: mat-color($primary, darker);
   }
+
   .primary-lighter-background-color {
     background-color: mat-color($primary, lighter);
   }
@@ -26,24 +28,30 @@
   }
 
   .primary-color {
-    color: mat-color($primary) !important;
-    
+    color: mat-color($primary) !important;  
   }
 
   .accent-background-color {
-    background-color: mat-color($accent);
+    background-color: mat-color($accent) !important;
   }
+
   .accent-darker-background-color {
     background-color: mat-color($accent, darker);
   }
+
   .accent-lighter-background-color {
     background-color: mat-color($accent, lighter);
   }
 
   .accent-color {
-    color: mat-color($accent);
+    color: mat-color($accent) !important;
   }
+
   .warn-background-color {
     background-color: mat-color($warn);
   }
+}
+
+.color-white {
+  color: white;
 }

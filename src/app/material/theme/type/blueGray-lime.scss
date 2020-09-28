@@ -1,0 +1,7 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$blueGrayLime-primary: mat-palette($mat-blue-gray);
+$blueGrayLime-accent : mat-palette($mat-amber);
+$blueGrayLime-warn: mat-palette($mat-pink);
+$blueGrayLime-theme : mat-light-theme($blueGrayLime-primary, $blueGrayLime-accent, $blueGrayLime-warn);
